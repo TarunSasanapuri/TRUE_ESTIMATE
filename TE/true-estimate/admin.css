@@ -1,0 +1,91 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('construction.jpeg') no-repeat center center fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-size: cover;
+            color: #fff;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            
+        }
+        h2 {
+          text-align: center;
+            margin-left:10%;
+            align-items: center; 
+            color: rgb(201, 227, 253);
+        }
+        label {
+            font-weight: bold;
+            color: rgb(183, 216, 250);
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .submit-button {
+            background: gray;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            width: 100%;
+            max-width: 150px;
+            margin-left:89%;
+            display: block;
+            text-align: center;
+        }
+        .submit-button:hover {
+            background-color: #b6b7b8;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #061c3045;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table td {
+            padding: 15px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        @media (max-width: 768px) {
+            .overlay {
+                padding: 10px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            label, select, input {
+                font-size: 0.9rem;
+            }
+            .submit-button {
+                width: 30%;
+                max-width: none;
+                margin: 20px auto 0;
+            }
+        }
